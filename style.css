@@ -1,0 +1,73 @@
+body{
+    direction: rtl;
+    background-color: rgb(245, 245, 245);
+    margin: 0px
+}
+*{
+    font-family: Tahoma, Arial, sans-serif
+}
+/*معلوماتي الشخصية*/
+.my-info{
+    background-color: dodgerblue;
+    display: inline-block;
+    padding: 5px;
+    max-width: 25%;
+    height: 100%;
+    float: right;
+    text-align: center;
+    color:white
+
+}
+.my-img{
+    width: 95%;
+    padding: 2px;
+    border: 2px solid gold;
+    border-radius: 180px
+}
+h1 , h2 , h3 , h4 , h5 ,h6{
+    font-weight: 150
+}
+.info{text-align: right;
+    padding-right: 2px
+}
+/*التواصل*/
+.imgsou{
+    width:40px;
+    padding: 1px;
+    border-radius: 180px;
+    text-align: center
+}
+.imgsou :hover{
+    opacity: 0.8
+}
+.source{text-align: center;}
+/*معلومات أخرى*/
+.other-info{
+    display: inline-block;
+    background-color: rgb(245,245,245);
+    max-width: 68%;
+    height: 100%;
+    float:right;
+    padding: 10px
+}
+img.imgsou.skill{
+    border-radius: 0px
+}
+/*إنجازاتي في السوشال ميديا*/
+a{
+    text-decoration: none;
+    color: rgb(68, 67, 67);
+    transition: background-color 1s;
+    font-weight:bold;
+    padding: 1px;
+}
+a:hover{
+    background-color: rgb(149, 202, 255);
+    color: white
+}
+/*تناسق الصفحة*/
+@media screen and (max-width: 450px) {
+    .my-info , .other-info{
+      max-width: 450px;
+    }
+  }
