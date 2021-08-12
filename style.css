@@ -6,14 +6,21 @@ body{
 *{
     font-family: Tahoma, Arial, sans-serif
 }
+/*الريسبونسياف*/
+.all{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
 /*معلوماتي الشخصية*/
 .my-info{
-    background-color: dodgerblue;
-    display: inline-block;
+    /*background-color: dodgerblue;*/
+    background-image: linear-gradient(
+        to bottom,
+        dodgerblue,
+        #1abc9c
+        );
     padding: 5px;
-    max-width: 25%;
-    height: 100%;
-    float: right;
+    max-height: 99%;
     text-align: center;
     color:white
 
@@ -43,31 +50,63 @@ h1 , h2 , h3 , h4 , h5 ,h6{
 .source{text-align: center;}
 /*معلومات أخرى*/
 .other-info{
-    display: inline-block;
     background-color: rgb(245,245,245);
-    max-width: 68%;
-    height: 100%;
-    float:right;
+    max-height: 99%;
     padding: 10px
 }
 img.imgsou.skill{
     border-radius: 0px
 }
 /*إنجازاتي في السوشال ميديا*/
-a{
+.mws{
     text-decoration: none;
     color: rgb(68, 67, 67);
-    transition: background-color 1s;
+    transition: border-right 1s;
     font-weight:bold;
     padding: 1px;
 }
-a:hover{
-    background-color: rgb(149, 202, 255);
-    color: white
+.mws:hover{
+    border-right: 8px solid rgb(149, 202, 255);
+}
+/*my project*/
+.my-project{
+    display: grid;
+    max-width:900px;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-template-rows: repeat(auto-fill,150px);
+    gap: 5px;
+    text-align: center;
+}
+.project{
+    background-color: dodgerblue;
+    padding: 4px;
+    height: 130px;
+    text-align: center;
+    border:2px solid dodgerblue;
+    border-radius: 5px;
+    text-decoration: none
+}
+.iop{
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px -1px 0px 2px rgb(221, 221, 221);
+}
+.nop{
+    padding: 0px;
+    margin: 2px;
+    color: white;
 }
 /*تناسق الصفحة*/
-@media screen and (max-width: 450px) {
-    .my-info , .other-info{
-      max-width: 450px;
+@media screen and (max-width: 400px) {
+    .all{
+      grid-template-columns: 100%;
     }
   }
+/*التذييل*/
+footer{
+    background: white;
+    width:100%;
+    height: 25px;
+    text-align: center;
+    font-weight: bold;
+}
