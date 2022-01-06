@@ -1,112 +1,150 @@
+/*style in generally*/
 body{
     direction: rtl;
     background-color: rgb(245, 245, 245);
-    margin: 0px
+    padding: 0px
 }
 *{
-    font-family: Tahoma, Arial, sans-serif
+    font-family: system-ui;
+    position: relative
 }
-/*الريسبونسياف*/
-.all{
-    display: grid;
-    grid-template-columns: 25% 75%;
+:root{
+    --blue:#2f4b6e
 }
-/*معلوماتي الشخصية*/
-.my-info{
-    /*background-color: dodgerblue;*/
-    background-image: linear-gradient(
-        to bottom,
-        dodgerblue,
-        #1abc9c
-        );
-    padding: 5px;
-    max-height: 99%;
-    text-align: center;
-    color:white
-
-}
-.my-img{
-    width: 95%;
-    padding: 2px;
-    border: 2px solid gold;
-    border-radius: 180px
-}
-h1 , h2 , h3 , h4 , h5 ,h6{
-    font-weight: 150
-}
-.info{text-align: right;
-    padding-right: 2px
-}
-/*التواصل*/
-.imgsou{
-    width:40px;
-    padding: 1px;
-    border-radius: 180px;
-    text-align: center
-}
-.imgsou :hover{
-    opacity: 0.8
-}
-.source{text-align: center;}
-/*معلومات أخرى*/
-.other-info{
-    background-color: rgb(245,245,245);
-    max-height: 99%;
-    padding: 10px
-}
-img.imgsou.skill{
-    border-radius: 0px
-}
-/*إنجازاتي في السوشال ميديا*/
-.mws{
+a{
+    color: rgb(116, 113, 113);
     text-decoration: none;
-    color: rgb(68, 67, 67);
-    transition: border-right 1s;
-    font-weight:bold;
-    padding: 1px;
 }
-.mws:hover{
-    border-right: 8px solid rgb(149, 202, 255);
+/*header*/
+header{
+    display: flex;
+    justify-content: space-around;
+    height: 45vh
 }
-/*my project*/
-.my-project{
+.logo{
+    width:275px;
+    border:1px solid gold;
+    border-radius:100%;
+    box-shadow: 1px 12px 20px 1px grey;
+    display: block;
+    top:15px;
+    margin-left: auto;
+    margin-right: auto
+}
+/*My information*/
+nav{
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+h2 , b{
+    color:var(--blue)
+}
+h2{
+    font-size: 35px;
+    text-align:center;
+    font-family: system-ui;
+}
+.iog{
+    width: 75%;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 1px 12px 20px 1px grey;
+    border-radius: 10px;
+    margin: 15px;
+}
+.skills{
+    text-align: left;
+}
+label{
+    display:block;
+    font-weight:bold
+}
+progress{
+    display:block;
+    margin: 2px;
+    width:100%;
+    color: var(--blue);
+    direction:initial
+}
+.lang{
+    direction: rtl;
+}
+progress[value] {
+    appearance: none;
+    border-radius: 20px;
+}
+progress[value]::-webkit-progress-bar{
+    background-color: white;
+    height:5px;
+    box-shadow: 0px 0px 7px 1px grey;
+    border-radius: 2px;
+    color: blue;
+}
+    /*my projects*/
+.my-projects{
     display: grid;
-    max-width:900px;
+    width:75%;
+    margin-bottom:25px;
     grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
     grid-template-rows: repeat(auto-fill,150px);
-    gap: 5px;
-    text-align: center;
+    gap:20px;
+    text-align:center
 }
-.project{
-    background-color: dodgerblue;
-    padding: 4px;
-    height: 130px;
-    text-align: center;
-    border:2px solid dodgerblue;
-    border-radius: 5px;
-    text-decoration: none
+.project {
+    background-color:white;
+    padding:5px;
+    height:130px;
+    text-align:center;
+    box-shadow:0px 0px 5px 5px grey;
+    border-radius:5px;
+    text-decoration:none
 }
-.iop{
+.iop {
     width: 100%;
     height: 100px;
-    box-shadow: 0px -1px 0px 2px rgb(221, 221, 221);
+    padding: 0px 0px 2px;
+    box-shadow: 0px 1px 0px 0px rgb(94 89 89);
+    border-radius:4px 4px 0px 0px;
 }
-.nop{
+.iopm {
+    width: 100px;
+    height: 95px;
+    top: 0px;
+    padding: 5px;
+}
+.bm{
+    width: 100%;
+    height:100px;
+    box-shadow: 0px 1px 2px 1px rgb(94 89 89);
+}
+.nop {
     padding: 0px;
     margin: 2px;
-    color: white;
+    color: var(--blue);
 }
-/*تناسق الصفحة*/
-@media screen and (max-width: 400px) {
-    .all{
-      grid-template-columns: 100%;
-    }
-  }
-/*التذييل*/
+/*footer ( down button )*/
 footer{
-    background: white;
-    width:100%;
-    height: 25px;
-    text-align: center;
-    font-weight: bold;
+    bottom: 100vh;
+    width:30px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 1px 12px 20px 1px grey;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+.contact{
+    width:25px;
+    padding:5px;
+    display:block;
+}
+/*responsive*/
+@media screen and (max-width: 600px) {
+    .presentation{
+        grid-template-columns:auto;
+    }
 }
