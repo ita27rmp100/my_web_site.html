@@ -1,0 +1,64 @@
+body{
+    background:rgb(240,240,240);
+}
+*{
+    font-family:system-ui;
+}
+div{
+    position:relative;
+    max-width:500px;
+    min-height:300px;
+    border-radius:20px;
+    background:white;
+    margin: auto;
+    box-shadow: 0px 0px 15px 0px grey;
+    text-align: center;
+}
+/*header*/
+.title{
+    background: rgb(0, 59, 73);
+    padding:15px;
+    border-radius: 20px 20px 0px 0px;
+    color:rgb(226, 226, 226);
+}
+/*input tag*/
+section{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-gap:10px;
+    justify-content:space-evenly
+}
+input{
+    display: inline-block;
+    font-size: large;
+    height:50px;
+    text-align: center;
+    margin:10px;
+    border:0px;
+    border-bottom: 1px solid grey;
+    outline: 0px;
+}
+/*buttons*/
+button{
+    display: block;
+    margin:10px;
+    margin-right: auto;
+    margin-left:auto;
+    padding: 15px;
+    width: 90%;
+    border: 0px;
+    color: white;
+    font-weight: bold;
+}
+#add{
+    background:rgb(33, 121, 30);
+}
+#get{
+    background:rgb(255, 56, 56);
+}
+button:hover{
+    opacity:0.8;
+}
+button:active{
+    opacity:0.9;
+}
