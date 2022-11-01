@@ -6,7 +6,8 @@ body{
 }
 *{
     font-family: system-ui;
-    position: relative
+    position: relative;
+    margin: 0px
 }
 :root{
     --blue:#2f4b6e
@@ -46,6 +47,7 @@ h2{
     font-size: 35px;
     text-align:center;
     font-family: system-ui;
+    margin: 15px;
 }
 .iog{
     width: 75%;
@@ -124,6 +126,25 @@ progress[value]::-webkit-progress-bar{
     padding: 0px;
     margin: 2px;
     color: var(--blue);
+}
+/* my certificate */
+.cert{
+    width:100%;
+    box-shadow: -3px 3px 12px -1px grey;
+}
+.arrow{
+    display: flex;
+    justify-content: space-between;
+}
+.right , .left {
+    display: inline;
+    position: relative;
+    width:50px;
+    z-index:50;
+}
+.left{
+    left:5px;
+    transform: rotate(180deg);
 }
 /*footer ( down button )*/
 footer{
