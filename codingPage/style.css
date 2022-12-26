@@ -1,0 +1,32 @@
+nav{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items: center;
+    gap: 15px;
+}
+.code{
+    background: rgb(40, 40, 40);
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+.output {
+    box-shadow: 0px 0px 7px 0px grey;
+    direction: rtl;
+    color: rgb(67,67,67);
+    font-size: 20px;
+    font-family: system-ui;
+    display: none;
+}
+.output , .code{
+    transition-duration: 3s;
+    width: 590px;
+    height: 400px;
+    border-radius: 15px;
+    padding: 10px;
+}
+h3 {
+    text-align-last: center;
+}
